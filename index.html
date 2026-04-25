@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="formulario">
+            <h1>Calculadora</h1>
+
+            <form id="hipoteca">
+
+                <label>Monto</label>
+                <input id="monto" type="number">
+                <label>Plazo</label>
+                <input id="plazo" type="number">
+                <label>Interés</label>
+                <input id="interes" type="number">
+
+                <label>Tipo</label>
+
+                
+                
+                <select id="tipo">
+                    <option value="pago-completo">Repayment</option>
+                    <option value="interes">Intereses</option>
+                </select>
+
+                <button type="submit">Calcular</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="resultados">
+        <h1>Resultados</h1>
+        <p id="result-mens">--</p>
+        <p id="result-total">--</p>
+
+        <p id="error"></p>
+    </div>
+
+
+    <script src="./calc.js"></script>
+</body>
+</html>

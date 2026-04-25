@@ -1,0 +1,26 @@
+.container{
+    display:flex;
+    max-width: 2em;
+    margin:auto;
+    border-radius: 5em;
+    overflow: hidden;
+
+}
+
+.formulario{
+    width: 10em;
+    padding: 2em;
+}
+
+.resultados{
+    width: 10em;
+    padding: 2em;
+    color: gray;
+}
+
+button{
+    background: mediumslateblue;
+    border: none;
+    padding: 1em;
+    border-radius: 2em;
+}
