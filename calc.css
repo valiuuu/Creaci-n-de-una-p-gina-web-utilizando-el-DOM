@@ -1,26 +1,96 @@
-.container{
-    display:flex;
-    max-width: 2em;
-    margin:auto;
-    border-radius: 5em;
+/* VARIABLES */
+:root {
+    --primary: #5B7E3C;
+    --secondary: #A2CB8B;
+    --white: #E8F5BD;
+    --contrast: #C44545;
+}
+
+body {
+    background-color: #e6f0f3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+.main-wrapper {
+    margin-top: 60px;
+}
+
+/* Card completa */
+.calculator-card {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 20px;
     overflow: hidden;
-
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
-.formulario{
-    width: 10em;
-    padding: 2em;
+/* Panel izquierdo */
+.left-panel {
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
-.resultados{
-    width: 10em;
-    padding: 2em;
-    color: gray;
+/* Panel derecho oscuro */
+.right-panel {
+    background: linear-gradient(135deg, #0c2b33, #123f47);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-button{
-    background: mediumslateblue;
+/* Inputs */
+.form-control {
+    border-radius: 10px;
+}
+
+/* Input group */
+.input-group-text {
+    background-color: #eef3f6;
+    border-radius: 10px;
+}
+
+/* Select */
+.form-select {
+    border-radius: 10px;
+}
+
+/* Botón */
+.calc {
+    background-color: #d8e94e;
     border: none;
-    padding: 1em;
-    border-radius: 2em;
+    color: #1a2a2f;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.calc:hover {
+    background-color: #c8db3f;
+}
+
+/* Resultado destacado */
+.result-highlight {
+    background-color: #0f3a43;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.result-highlight h2 {
+    color: #d8e94e;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Texto pequeño */
+.small-text {
+    font-size: 0.9rem;
+    color: #cbd5da;
 }
